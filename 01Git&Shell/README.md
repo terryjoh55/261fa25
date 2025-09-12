@@ -27,9 +27,7 @@
 - **What is the RAM of your machine?**
 - **Is your Hard Drive easily accessible?**
 	- Finder>Settings>Hard Disks
-- Make sure Desktop and Documents is in username folder (not iCloud!)
-
-## Cloud-based Storage and Version Control systems you've used before
+- **Make sure Desktop and Documents is in username folder (not iCloud!**
 
 ## Command Line
 
@@ -51,12 +49,6 @@
 	- `clear` clears the Terminal Window
 
 	- `cd ~` change directory to your root directory (how to "go back"), `~` means home directory
-
-	- `mkdir` Makes a new directory (`mkdir NewDirectory` makes a new folder called `NewDirectory`)
-
-	- `man man` opens the manual for Terminal commands ("man man" will open up the manual for the manual!)
-
-	- `nano` is a text editor within Command-line Interface (you'll see how great it is relative to VSC in a minute)
 	
 	- `-o` tag to create an object file
 
@@ -65,9 +57,11 @@
 # CODE ALONG
 - `say "hello, world" -o hello.aiff`
 
+## Cloud-based Storage and Version Control systems you've used before
+
 ## [Version Control Systems](https://www.geeksforgeeks.org/version-control-systems/)
 - Your HD is your local repository
-- GitHub is the remote repository we're going to use
+- GitHub.com is the remote repository we're going to use
 - [Git](https://en.wikipedia.org/wiki/Git) is the version control software we're going to use to communicate between local and remote
 - GitHub Desktop is a software application that we'll use to manage Git
 - Fetch: check in with other repository
