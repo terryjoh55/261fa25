@@ -55,7 +55,7 @@
 	- `say` 
 	
 # CODE ALONG
-- `say "hello, world" -o hello.aiff`
+- `say -v "Samantha" "hello, world" -o hello.aiff`
 
 ## Cloud-based Storage and Version Control systems you've used before
 
