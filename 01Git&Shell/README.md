@@ -88,11 +88,12 @@
 - The README.md file of the repository you created for this class will open with TextMate!
 
 ## [Markdown 101](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
-- required of all Markdown documentation files in this class:
+- required of all Markdo!wn documentation files in this class:
 	- [Headers](https://github.com/adam-p/markdown-here/wiki/Markdown-Here-Cheatsheet#headers)
 	- [Links](https://github.com/adam-p/markdown-here/wiki/Markdown-Here-Cheatsheet#links)
 	- [Code highlighting](https://github.com/adam-p/markdown-here/wiki/Markdown-Here-Cheatsheet#code)
 	- [Images ALWAYS WITH ALT TEXT](https://github.com/adam-p/markdown-here/wiki/Markdown-Here-Cheatsheet#images)
+	- ![bananacatgif](bananacat.gif)
 
 ## CODE ALONG TO MAKE AN SUBFOLDER FOR HOMEWORK
 - Open TextMate

@@ -14,7 +14,7 @@ console.clear(); // Clears the console output
 // *Some Syntax Rules*
 // - JavaScript allows automatic type conversion
 // - Uses indentation for readability, semicolons are optional
-// - Variables are case-sensitive
+// - Variables are case-sensitive e.g. ~RachelRome vs. ~rachelRome
 
 // *Expressions vs Statements*
 // - Expression: Produces a value (e.g., `5 + 3`)
@@ -36,11 +36,13 @@ const myName = "Rachel";
 console.log(myName.length); // Get the length of the string
 console.log(myName[3]);     // Access character at index 3
 // ***String Methods***
-console.log(myName.toUpperCase()); // Convert string to uppercase
-console.log(myName.toLowerCase()); // Convert string to lowercase
+const favFood = "banana";
+console.log(favFood.toUpperCase()); // Convert string to uppercase
+console.log(favFood.toLowerCase()); // Convert string to lowercase
 // ***Slicing strings (extracting parts of a string)***
-console.log(myName.slice(0, 3)); // Extracts characters from index 0 to 2
-console.log(myName.slice(2, 4)); // Extracts characters from index 2 to 3
+const favFood = "banana";
+console.log(favFood.slice(0, 3)); 
+console.log(favFood.slice(2, 4));
 // ***Concatenation (combining strings)***
 console.log("yum" + "my"); // "yummy"
 console.log("yum".repeat(3)); // "yumyumyum"
@@ -48,6 +50,8 @@ console.log("yum".repeat(3)); // "yumyumyum"
 console.log(`${9/3} little pigs`);
 // ***Special characters in strings***
 console.log("col1\tcol2\tcol3\ncol1\tcol2\tcol3\ncol1\tcol2\tcol3"); // Uses tab and newline characters
+
+
 // **Comparison Operators**
 console.log(5 > 3);   // true (greater than)
 console.log(5 < 3);   // false (less than)
@@ -57,6 +61,8 @@ console.log(5 !== 3); // true (not equal)
 console.log(true && false); // false (AND: both conditions must be true)
 console.log(true || false); // true (OR: at least one condition must be true)
 console.log(!true);         // false (NOT: negates the boolean value)
+
+
 // **Ternary Operator (Conditional Expression)**
 const height = 50;
 const canRide = (height > 48) ? "Yes, you may ride." : "Sorry, you may not ride.";
@@ -83,12 +89,12 @@ console.log(parseFloat("56.83"), typeof parseFloat("56.83")); // Convert string 
 
 // *Floating point precision handling*
 const z = 3.141592653589793;
-console.log(z.toFixed(5)); // Ensures precision with 50 decimal places
+console.log(z.toFixed(5)); // Ensures precision with 5 decimal places
 
 // Arrays
 const fruits = ["apple", "banana", "cherry"];
 console.log(fruits[0]); // Access first element
-fruits.push("date"); // Add new element to array
+fruits.push("blueberries"); // Add new element to array
 console.log(fruits);
 
 // Array Transversal

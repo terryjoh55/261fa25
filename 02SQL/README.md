@@ -53,7 +53,7 @@
 - Something broke while it was running/just didn't run at all
 - Classic problems:
 	- Control Flow issues
-	- Recursion
+	- Recursion (will be in reading this week)
 
 **Semantic**
 
@@ -146,6 +146,8 @@
 
           - DELETE FROM nycto WHERE muchness IS NULL;
 
+**[DB Browser for SQLite](https://sqlitebrowser.org/dl/)**
+
 **Database Problems**
   - Race Condition
     - The timing of two actions or events cause unexpected behavior
@@ -153,4 +155,4 @@
     - Why you can't have certain characters in usernames and passwords
     ![](img/injection.png)
 
-**[DB Browser for SQLite](https://sqlitebrowser.org/dl/)**
+## The reading is hard, sorry
