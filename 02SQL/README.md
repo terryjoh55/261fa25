@@ -112,7 +112,7 @@
           - SELECT name, dark FROM nycto;
           - SELECT * FROM nycto;
           - SELECT * FROM nycto WHERE dark = 'no';
-          - SELECT DISTINCT name FROM nycto;
+          - SELECT DISTINCT dark FROM nycto;
           - ALTER TABLE nycto ADD COLUMN 'muchness' integer;
           - UPDATE nycto SET dark = 'yes' WHERE id = 2;
           - UPDATE nycto SET muchness = 9 WHERE id = 2;
