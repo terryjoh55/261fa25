@@ -67,6 +67,8 @@ console.log(!true);         // false (NOT: negates the boolean value)
 const height = 50;
 const canRide = (height > 48) ? "Yes, you may ride." : "Sorry, you may not ride.";
 console.log(canRide);
+
+
 // **NaN and Empty Values**
 console.log(typeof NaN);        // "number" (special case, but means Not-a-Number)
 console.log(typeof null);       // "object" (historical JavaScript quirk)
@@ -97,5 +99,5 @@ console.log(fruits[0]); // Access first element
 fruits.push("blueberries"); // Add new element to array
 console.log(fruits);
 
-// Array Transversal
+// Array Transversal with arrow function
 fruits.forEach(fruit => console.log(fruit));

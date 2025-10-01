@@ -56,55 +56,70 @@ while (count < 3) {
   count++; // shorthand for add one integer!!!
 }
 
-// *while-if* Loop
-let count = 0;
-while (count < 3) {
-  console.log("Happy");
-  count++;
-}
-if (count >= 3) {
-  console.log("Sad");
-}
-
-// *for* Loop
-for (let i = 0; i < 128; i++) { //standard structure for 'for' accumulators
-	console.log(`The next MIDI value is ${i}`); //template literal!
+// *for* Loop 
+for (let i = 0; i < 128; i++) { //standard structure for 'for' accumulators -- initializes; checks; updates
+	console.log(`MIDI value is ${i}`); //template literal!
 }
 
 // incrementing by 2
 for (let i = 0; i < 128; i += 2) {
-  console.log(`The next MIDI value is ${i}`);
+  console.log(`MIDI value is ${i}`);
 }
 
-// finding numbers divisible by 7 and 5 between 1500 and 2700
+// decrementing by 3
+for (let i = 128; i >= 0; i -= 3) { 
+	console.log(`MIDI value is ${i}`); 
+}
+
+// finding numbers divisible by 7 and 5 between 1500 and 2700 (homework is based on this...)
 for (let i = 1500; i <= 2700; i++) {
   if (i % 7 === 0 && i % 5 === 0) {
     console.log(i);
   }
 }
 
+// pyramid
+for (let row = "#"; row.length < 8; row += "#") // .js method length
+  console.log(row);
+
 // Nested for-loop
 for (let i = 0; i < 10; i++) {
-  let row = '';
+	let row = ' '; //.js means print nothing
   for (let j = 0; j < 10; j++) {
     if (j >= i) {
-      row += j.toString();
+		row += j.toString(); // .js method add (append) to string
     }
   }
   console.log(row);
 }
 
+//chessboard
+let size = 8;
+let board = "";
+
+for (let y = 0; y < size; y++) {
+  for (let x = 0; x < size; x++) {
+    if ((x + y) % 2 == 0) {
+      board += " ";
+    } else {
+      board += "#";
+    }
+  }
+  board += "\n";
+}
+console.log(board);
+
 // Recursion
+// - solve a problem with itself!
 // - a computational problem with solutions to smaller instances of the same problem
-// - functions that call themselves. 
+// Factorial, Fibinocci, Romanesco
 
 // Infinite recursion
 function func() {
   console.log("Lovely!");
   func();
 }
-
-// func();
+func();
 
 // Recursion with a stop condition
 function recursiveFunc(count) {
