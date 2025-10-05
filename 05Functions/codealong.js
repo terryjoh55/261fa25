@@ -1,9 +1,9 @@
 // *Why Use Functions?*
 // - Instead of repeating code, we can encapsulate logic into functions for:
-// ✅ Reusability – Call the same function multiple times.
-// ✅ Readability – Makes the code easier to understand.
-// ✅ Modularity – Each function has a clear purpose.
-// So far we've mostly using functions built-in to the language, now we're going to write our own functions!
+// Reusability – Call the same function multiple times.
+// Readability – Makes the code easier to understand.
+// Modularity – Each function has a clear purpose.
+// So far we've mostly using functions built-in to the language, now we're going to write our own functions! like neologisms! like 'truthiness'!
 
 // Function with one argument/parameter
 function cube(n) {

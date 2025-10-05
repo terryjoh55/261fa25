@@ -4,31 +4,46 @@
 // - Determines the order in which statements in a program are executed
 // - JavaScript executes code line-by-line from top to bottom unless control structures (like conditionals or loops) alter that flow.
 
+// MIDI protocol 101:
+// 0-127 with 0 as lowest value and 127 as highest
+
 // *if* 
 // - Executes a block of code only if a specified condition is true.
-let midiNote = 64;
-if (midiNote >= 0 && midiNote <= 127) {
-  console.log("Valid MIDI note:", midiNote);
+let midi = 64;
+if (midi >= 0 && midi <= 127) {
+  console.log("VALID", midi);
 }
 
 
 // *if-else* 
-let anotherNote = 150;
-if (anotherNote >= 0 && anotherNote <= 127) {
-  console.log("Valid MIDI note.");
+let otherMIDI = 150;
+if (otherMIDI >= 0 && otherMIDI <= 127) {
+  console.log("VALID");
 } else {
-  console.log("Invalid MIDI note.");
+  console.log("INVALID");
 }
 
 
 // *else-if* for Multiple Conditions
-let thirdNote = 64;
-if (thirdNote < 64) {
-  console.log("MIDI note is smaller than 64.");
-} else if (thirdNote > 64) {
-  console.log("MIDI note is greater than 64.");
+let manyMIDI = 64;
+if (manyMIDI < 64) {
+  console.log("MIDI is smaller than 64.");
+} else if (manyMIDI > 64) {
+  console.log("MIDI is greater than 64.");
 } else {
-  console.log("MIDI note is exactly 64.");
+  console.log("MIDI is exactly 64.");
+}
+
+// *else-if* for More Multiple Conditions
+let mmMIDI = 64;
+if (mmMIDI == 12) {
+  console.log("MIDI is 12.");
+} else if (mmMIDI == 13) {
+  console.log("MIDI is 13.");
+} else if (mmMIDI > 64) {
+  console.log("MIDI is greater than 64.");
+} else {
+  console.log("MIDI is less than 64 but not 12 or 13.");
 }
 
 // Loops 
@@ -37,59 +52,74 @@ if (thirdNote < 64) {
 // *while* Loop
 let count = 0;
 while (count < 3) {
-  console.log("Happy Thursday");
-  count++;
+  console.log("Happy");
+  count++; // shorthand for add one integer!!!
 }
 
-// *while-else* Loop
-let counter = 0;
-while (counter < 3) {
-  counter++;
-  console.log("Happy Thursday");
-}
-if (counter >= 3) {
-  console.log("Happy Friday");
-}
-
-// *for* Loop
-for (let i = 0; i < 128; i++) {
-  console.log(`The next MIDI note value is ${i}`);
+// *for* Loop 
+for (let i = 0; i < 128; i++) { //standard structure for 'for' accumulators -- initializes; checks; updates
+	console.log(`MIDI value is ${i}`); //template literal!
 }
 
 // incrementing by 2
 for (let i = 0; i < 128; i += 2) {
-  console.log(`The next MIDI note value is ${i}`);
+  console.log(`MIDI value is ${i}`);
 }
 
-// finding numbers divisible by 7 and 5 between 1500 and 2700
+// decrementing by 3
+for (let i = 128; i >= 0; i -= 3) { 
+	console.log(`MIDI value is ${i}`); 
+}
+
+// finding numbers divisible by 7 and 5 between 1500 and 2700 (homework is based on this...)
 for (let i = 1500; i <= 2700; i++) {
   if (i % 7 === 0 && i % 5 === 0) {
     console.log(i);
   }
 }
 
+// pyramid
+for (let row = "#"; row.length < 8; row += "#") // .js method length
+  console.log(row);
+
 // Nested for-loop
 for (let i = 0; i < 10; i++) {
-  let row = '';
+	let row = ' '; //.js means print nothing
   for (let j = 0; j < 10; j++) {
     if (j >= i) {
-      row += j.toString();
+		row += j.toString(); // .js method add (append) to string
     }
   }
   console.log(row);
 }
 
+//chessboard
+let size = 8;
+let board = "";
+
+for (let y = 0; y < size; y++) {
+  for (let x = 0; x < size; x++) {
+    if ((x + y) % 2 == 0) {
+      board += " ";
+    } else {
+      board += "#";
+    }
+  }
+  board += "\n";
+}
+console.log(board);
+
 // Recursion
+// - solve a problem with itself!
 // - a computational problem with solutions to smaller instances of the same problem
-// - functions that call themselves. 
+// Factorial, Fibinocci, Romanesco
 
 // Infinite recursion
 function func() {
   console.log("Lovely!");
   func();
 }
-// Uncomment to test (it will crash your browser)
-// func();
+func();
 
 // Recursion with a stop condition
 function recursiveFunc(count) {
